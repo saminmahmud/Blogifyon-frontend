@@ -420,9 +420,11 @@ const Nav = () => {
                     <Link to="/" className="text-white py-2 hover:underline">
                         Home
                     </Link>
-                    <Link to="/add-post" className="text-white py-2 hover:underline">
+                    {isLoggedIn && (
+                        <Link to="/add-post" className="text-white py-2 hover:underline">
                         Add Post
-                    </Link>
+                        </Link>
+                    )}
                     <Link to="/about" className="text-white py-2 hover:underline">
                         About
                     </Link>
